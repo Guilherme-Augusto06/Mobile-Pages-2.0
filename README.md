@@ -15,7 +15,7 @@ Este é um aplicativo simples de tela de login desenvolvido com React Native e E
 1. Clone este repositório em sua máquina local:
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/Guilherme-Augusto06/Mobile-LoginPage.git
+git clone https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/Guilherme-Augusto06/Mobile-LoginPage.git](https://github.com/Guilherme-Augusto06/Mobile-Pages-2.0.git)
 ```
 
 2. Navegue até o diretório do projeto:
