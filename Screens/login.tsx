@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, Image, Text, TextInput, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, Image, Text, TextInput, TouchableOpacity,  } from 'react-native';
 import { FontAwesome5 } from '@expo/vector-icons';
 import Input from '../components/input';
 import BackgroundColor from '../components/Backgrounds';
 import Bottom1 from '../components/bottom';
 import Tittle from '../components/tittle';
-
+import InputSenhas from '../components/inputSenha';
 export default function Login() {
   return (
     <View style={styles.container}>
@@ -14,7 +14,7 @@ export default function Login() {
       <View style={styles.container2}>  
         <Tittle name="Faça Login para Acessar o Sistema!"/>
         <Input name="E-mail:" text='Inisra seu email'/>
-        <Input name="Senha:" text='Inisra sua senha:'/>
+        <InputSenhas name="Senha:" text='Inisra sua senha:' security={true}/>
         <Bottom1 name="Cadastre-se" color="black"/>
         <TouchableOpacity style={styles.bottomText}>
           <Text style={styles.link}>Cadastre-se</Text>
