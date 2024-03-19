@@ -9,23 +9,23 @@ type TextBoxWithTitleProps = {
 }
 
 const TextBoxWithTitle = ({ title, text, security }: TextBoxWithTitleProps) => {
-    const [hovered, setHovered] = useState("#F39200");
-  return (
-    <View style={styles.container}>
-      <View style={styles.titleContainer}>
-        <Text style={styles.title}>{title}</Text>
-      </View>
-      <View style={styles.textBox}>
-        <TextInput placeholder={text}
+    const [hovered, setHovered] = useState("#5D5C5C");
+  return (  
+    
+    <View style={[styles.container, { borderColor: hovered }]}>
+              <TextInput placeholder={text}
                 style={[styles.input, { borderColor: hovered }]}
                 onFocus={() => {
                     setHovered("#F39200");
                 }}
                 onBlur={() => {
-                    setHovered("#F5F5F5");
+                    setHovered("#5D5C5C");
                 }}
                 secureTextEntry={security}/>
+      <View style={styles.titleContainer}>
+        <Text style={styles.title}>{title}</Text>
       </View>
+
     </View>
   );
 };
@@ -39,6 +39,9 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     marginLeft: 20,
     marginRight: 20,
+    paddingHorizontal: 10,
+    paddingVertical: 10,
+    color: 'black',
   },
   titleContainer: {
     backgroundColor: 'white',
@@ -46,6 +49,14 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: -10,
     left: 10,
+  },
+  input: {
+
+
+
+},
+  hovered: {
+    borderColor: '#F39200',
   },
   title: {
     fontSize: 16,
