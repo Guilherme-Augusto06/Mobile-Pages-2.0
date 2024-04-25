@@ -15,7 +15,7 @@ const Descricao = () => {
                 <Text style={styles.titulo}>Local:</Text>
                 <Text style={styles.item}> SALA C13 </Text>
                 <Text style={styles.titulo}>Responsável:</Text>
-                <Text style={styles.item}> CARLOS </Text>
+                <Text style={styles.item}> Thiago </Text>
                 <Text style={styles.titulo}>Data de Registro:</Text>
                 <Text style={styles.item}> 05/03/2024 </Text>
             </View>
